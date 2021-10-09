@@ -8,6 +8,7 @@ import {
 import styles from './Layout.module.css';
 import { useState } from 'react';
 import {useRouter} from 'next/router';
+import Link from 'next/link';
 
 const { Header, Content, Footer, Sider } = Layout;
 var title = 'COVID-19';
@@ -34,7 +35,7 @@ export default function LayoutDashboard(props) {
       <Layout style={{ minHeight: '100vh' }}>
         
         <Sider collapsible collapsed={collapsed} onCollapse={() => handleOnCollapse()} collapsedWidth={0} zeroWidthTriggerStyle={{top: 0, height:65, fontSize: 20, paddingTop: 10}} >
-          <p className={styles.title}><a href="/">{title}</a></p>
+          <p className={styles.title}><Link href="/"><a>{title}</a></Link></p>
             
           <Menu theme="dark" mode="inline">
             <Menu.Item icon={<PieChartOutlined />} onClick={() => router.push('/summary')}>
