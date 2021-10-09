@@ -4,14 +4,17 @@ import axios from "axios";
 import { Card, Col, Row } from 'antd';
 import { Gap } from "../../components"
 import styles from './Summary.module.css'
+import cors from 'cors';
 
 export default function Summary() {
     const [data, setData] = useState([]);
     
-    
     useEffect(async () => {
-        const result = await axios.get("https://api.kawalcorona.com/indonesia", { crossdomain: true }); 
-        setData(result.data[0]);
+        fetch("https://mycorsproxy-covid.herokuapp.com/https://api.kawalcorona.com/indonesia").then(res => res.json()).then(
+            (result) => {
+                console.log(result)
+        setData(result[0]);
+            })
     }, []);
 
     console.log(data.name);

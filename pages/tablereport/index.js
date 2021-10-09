@@ -18,7 +18,7 @@ export default class Tablereport extends React.Component {
 
       componentDidMount() {
         const result = [];
-        axios.get("https://api.kawalcorona.com/indonesia/provinsi")
+        axios.get("https://mycorsproxy-covid.herokuapp.com/https://api.kawalcorona.com/indonesia/provinsi")
         .then(response => {
           for (var i in response.data) {
             result.push(response.data[i].attributes);

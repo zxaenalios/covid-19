@@ -14,7 +14,7 @@ export default function Graphic() {
     const meninggal = [];
     
     useEffect(async () => {
-        const response = await axios.get("https://api.kawalcorona.com/indonesia/provinsi")
+        const response = await axios.get("https://mycorsproxy-covid.herokuapp.com/https://api.kawalcorona.com/indonesia/provinsi")
         
             for (var i in response.data) {
               if (response.data[i].attributes.Provinsi == "DKI Jakarta") {
