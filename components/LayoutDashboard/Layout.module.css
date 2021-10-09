@@ -1,0 +1,36 @@
+
+.logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(51, 51, 51, 0.3);
+  }
+  
+.site_layout {
+  background: rgb(255, 255, 255);
+}
+
+.site_layout_background {
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  color: white;
+  background-color: #002140;
+  text-align: center;
+  /* justify-content: center; */
+  box-sizing: border-box;
+  padding: 13px;
+}
+
+.title_content {
+  font-size: 27px;
+  padding-left: 20px;
+  font-weight: bold;
+}
