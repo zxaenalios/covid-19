@@ -22,15 +22,15 @@ export default function Summary() {
     return (
         <LayoutDashboard title="Summary">    
             <h1>Informasi mengenai jumlah kasus COVID-19 di Indonesia</h1>
-            <Card title="Kasus Positif" className={styles.card} style={{ color: 'blue' }}>
+            <Card hoverable title="Kasus Positif" className={styles.card} style={{ color: 'blue' }}>
             {data.positif}
             </Card>
             <Gap height= {10}/>
-            <Card title="Kasus Sembuh" className={styles.card} style={{ color: 'green' }}>
+            <Card hoverable  title="Kasus Sembuh" className={styles.card} style={{ color: 'green' }}>
             {data.sembuh}
             </Card>
             <Gap height= {10}/>
-            <Card title="Kasus Meninggal" className={styles.card} style={{ color: 'red' }}>
+            <Card hoverable  title="Kasus Meninggal" className={styles.card} style={{ color: 'red' }}>
             {data.meninggal}
             </Card>
         </LayoutDashboard>

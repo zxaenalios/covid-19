@@ -21,3 +21,17 @@ h1 {
   text-align: center;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+

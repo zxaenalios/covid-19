@@ -21,12 +21,15 @@
 }
 
 .title {
+  font-size: 27px;
+  font-weight: bold;
   color: white;
   background-color: #002140;
   text-align: center;
   /* justify-content: center; */
   box-sizing: border-box;
-  padding: 13px;
+  padding: 11px;
+  cursor: pointer;
 }
 
 .title_content {

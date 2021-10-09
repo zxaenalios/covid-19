@@ -14,16 +14,14 @@ var title = 'COVID-19';
 
 export default function LayoutDashboard(props) {
   const router = useRouter();
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   function handleOnCollapse() {
     
     if (collapsed == false) {
       setCollapsed('collapsed');
-      title = 'C19';
     }
     else {
       setCollapsed(false);
-      title = 'COVID-19';
     }
   }
     return (
@@ -36,7 +34,7 @@ export default function LayoutDashboard(props) {
       <Layout style={{ minHeight: '100vh' }}>
         
         <Sider collapsible collapsed={collapsed} onCollapse={() => handleOnCollapse()} collapsedWidth={0} zeroWidthTriggerStyle={{top: 0, height:65, fontSize: 20, paddingTop: 10}} >
-          <h1 className={styles.title}>{title}</h1>
+          <p className={styles.title}><a href="/">{title}</a></p>
             
           <Menu theme="dark" mode="inline">
             <Menu.Item icon={<PieChartOutlined />} onClick={() => router.push('/summary')}>
