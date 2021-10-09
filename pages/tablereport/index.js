@@ -141,7 +141,7 @@ export default class Tablereport extends React.Component {
                 
                 <ExportXLS csvData={this.state.datas} fileName={this.state.fileName} />
                 <Gap height={10}/>
-                <Table columns={columns} dataSource={this.state.datas} />;
+                <Table columns={columns} dataSource={this.state.datas} scroll={{ y: 300, x: '100vw' }}/>;
             </LayoutDashboard>
         )
     }
