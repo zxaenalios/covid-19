@@ -35,7 +35,7 @@ export default function LayoutDashboard(props) {
       </Head> 
       <Layout style={{ minHeight: '100vh' }}>
         
-        <Sider collapsible collapsed={collapsed} onCollapse={() => handleOnCollapse()}>
+        <Sider collapsible collapsed={collapsed} onCollapse={() => handleOnCollapse()} collapsedWidth={0} zeroWidthTriggerStyle={{top: 0, height:65, fontSize: 20, paddingTop: 10}} >
           <h1 className={styles.title}>{title}</h1>
             
           <Menu theme="dark" mode="inline">
@@ -60,7 +60,7 @@ export default function LayoutDashboard(props) {
               <Breadcrumb.Item>User</Breadcrumb.Item>
               <Breadcrumb.Item>Bill</Breadcrumb.Item>
             </Breadcrumb> */}
-            <div className={styles.site_layout_background} style={{ padding: 24, minHeight: 360 }}>
+            <div className={styles.site_layout_background} style={{ padding: 24, minHeight: 360}}>
               {props.children}
             </div>
           </Content>

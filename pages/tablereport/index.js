@@ -3,8 +3,8 @@ import { Table, Input, Button, Space } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
 import React from "react";
-// import { ExportXLS } from "./ExportXLS";
 import axios from 'axios';
+import { ExportXLS } from "../../utils/exportXLS";
 
 
 export default class Tablereport extends React.Component {
@@ -139,7 +139,7 @@ export default class Tablereport extends React.Component {
             <LayoutDashboard title="Report">
                 <h1>Informasi mengenai jumlah kasus COVID-19 berdasarkan provinsi di Indonesia</h1>
                 
-                {/* <ExportXLS csvData={this.state.datas} fileName={this.state.fileName} /> */}
+                <ExportXLS csvData={this.state.datas} fileName={this.state.fileName} />
                 <Gap height={10}/>
                 <Table columns={columns} dataSource={this.state.datas} />;
             </LayoutDashboard>

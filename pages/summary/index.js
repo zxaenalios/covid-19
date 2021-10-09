@@ -9,7 +9,7 @@ import cors from 'cors';
 export default function Summary() {
     const [data, setData] = useState([]);
     
-    useEffect(async () => {
+    useEffect(() => {
         fetch("https://mycorsproxy-covid.herokuapp.com/https://api.kawalcorona.com/indonesia").then(res => res.json()).then(
             (result) => {
                 console.log(result)
