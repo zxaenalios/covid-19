@@ -7,8 +7,15 @@ import styles from './Summary.module.css'
 
 export default function Summary() {
     const [data, setData] = useState([]);
+    const config = {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      };
+    
     useEffect(async () => {
-        const result = await axios.get("https://api.kawalcorona.com/indonesia"); 
+        const result = await axios.get("https://api.kawalcorona.com/indonesia", config); 
         setData(result.data[0]);
     }, []);
 
