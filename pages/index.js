@@ -13,7 +13,7 @@ const contentStyle = {
 export default function Home() {
   return (
     <LayoutDashboard title="Dashboard Covid-19">
-      <h1>Informasi seputar Covid-19 di Indonesia</h1>
+      <h1>Informasi Covid-19 di Indonesia</h1>
       <Carousel autoplay="true">
         <div>
           <img src="https://web.kominfo.go.id/sites/default/files/users/4896/Banner%20Bantu%20Masyarakat%20Tahu%20COVID-19.jpeg" style={contentStyle}/>

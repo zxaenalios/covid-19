@@ -78,7 +78,7 @@ export default function Graphic() {
     }
     return (
         <LayoutDashboard title="Graphic">
-            <h1>Grafik kasus COVID-19 di DKI Jakarta, Jawa Barat, Jawa Tengah, dan Jawa Timur</h1>
+            <h1>Grafik Kasus COVID-19</h1>
             <Bar
                 data={data}
                 options={options}

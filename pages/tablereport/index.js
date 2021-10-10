@@ -133,10 +133,10 @@ export default class Tablereport extends React.Component {
     ];
     return (
         <LayoutDashboard title="Report">
-            <h1>Informasi mengenai jumlah kasus COVID-19 berdasarkan provinsi di Indonesia</h1>
+            <h1>Jumlah Kasus COVID-19 di Indonesia Berdasarkan Provinsi</h1>
             <ExportXLS csvData={this.state.datas} fileName={this.state.fileName} />
             <Gap height={10}/>
-            <Table columns={columns} dataSource={this.state.datas} scroll={{ y: 300, x: '100vw' }}/>;
+            <Table columns={columns} dataSource={this.state.datas} scroll={{ y: 300, x: '100vw' }}/>
         </LayoutDashboard>
     )
   }

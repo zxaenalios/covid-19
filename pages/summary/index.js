@@ -15,7 +15,7 @@ export default function Summary() {
     }, []);
     return (
         <LayoutDashboard title="Summary">    
-            <h1>Informasi mengenai jumlah kasus COVID-19 di Indonesia</h1>
+            <h1>Total Kasus COVID-19 di Indonesia</h1>
             <Card hoverable title="Kasus Positif" className={styles.card} style={{ color: 'blue' }}>
                 {data.positif}
             </Card>
