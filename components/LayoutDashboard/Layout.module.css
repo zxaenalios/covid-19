@@ -1,9 +1,4 @@
 
-.logo {
-    height: 32px;
-    margin: 16px;
-    background: rgba(51, 51, 51, 0.3);
-  }
   
 .site_layout {
   background: rgb(255, 255, 255);
@@ -13,14 +8,17 @@
   background: rgb(255, 255, 255);
   border-radius: 8px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  min-height: 360;
 }
 
 .header {
   background: rgb(255, 255, 255);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+  padding: 0;
 }
 
-.title {
+.logo {
   font-size: 27px;
   font-weight: bold;
   color: white;
@@ -36,4 +34,16 @@
   font-size: 27px;
   padding-left: 50px;
   font-weight: bold;
+}
+
+.layout {
+  min-height: 100vh;
+}
+
+.content {
+  margin: 16px 16px;
+}
+
+.footer {
+  text-align: center;
 }

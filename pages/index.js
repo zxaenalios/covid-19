@@ -8,7 +8,6 @@ const contentStyle = {
   textAlign: 'center',
   background: '#364d79',
   borderRadius: '5px',
- 
 };
 
 export default function Home() {
@@ -24,6 +23,5 @@ export default function Home() {
         </div>
       </Carousel>
     </LayoutDashboard>
-   
   );
 }
